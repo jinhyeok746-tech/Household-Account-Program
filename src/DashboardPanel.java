@@ -77,7 +77,7 @@ public class DashboardPanel extends JFrame {
         setVisible(true);
     }
     
-    // 이 메서드를 호출하여 화면의 모든 데이터를 DB에서 최신 정보로 갱신합니다.
+    // 이 메서드를 호출하여 화면의 모든 데이터를 DB에서 최신 정보로 갱신
     public void refreshData() {
         long totalBalance = dataService.getTotalBalance(currentUserId);
         long monthIncome = dataService.getCurrentMonthIncome(currentUserId);
